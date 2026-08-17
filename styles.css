@@ -253,6 +253,76 @@ nav {
   margin: 15px auto;
 }
 
+.sobre-mi-contenido {
+  max-width: 750px;
+
+  margin: 0 auto;
+
+  padding: 30px;
+
+  background-color: var(--tarjeta);
+
+  border: 1px solid var(--borde);
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-mi-texto {
+  margin-bottom: 35px;
+}
+
+.sobre-mi-texto p {
+  margin: 12px auto;
+}
+
+.sobre-mi-datos {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.dato {
+  padding: 20px 15px;
+
+  background-color: #353550;
+
+  border-radius: 15px;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.dato:hover {
+  transform: translateY(-5px);
+
+  background-color: #3d3d5c;
+}
+
+.dato-icono {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 2rem;
+}
+
+.dato h3 {
+  margin: 8px 0;
+
+  color: var(--texto);
+
+  font-size: 1rem;
+}
+
+.dato p {
+  margin: 0;
+
+  font-size: 0.85rem;
+}
 
 /* ========================================
    SEPARADORES
@@ -385,6 +455,14 @@ footer p {
 
   .seccion h2 {
     font-size: 1.6rem;
+  }
+
+  .sobre-mi-contenido {
+    padding: 20px;
+  }
+
+  .sobre-mi-datos {
+    grid-template-columns: 1fr;
   }
 
 }
